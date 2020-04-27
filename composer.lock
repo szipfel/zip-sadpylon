@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "838e4c62d99ee705e7713d5f552d49dc",
+=======
+    "content-hash": "3b34da3979293256b863926cdd0cfac4",
+>>>>>>> parent of 78d2cc9eb... Update to Drupal 8.8.4. For more information, see https://www.drupal.org/project/drupal/releases/8.8.4
     "packages": [
         {
             "name": "acquia/lightning",
@@ -1244,6 +1248,7 @@
             "time": "2020-01-10T15:49:25+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "doctrine/event-manager",
             "version": "1.1.0",
             "source": {
@@ -1255,6 +1260,14 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/doctrine/event-manager/zipball/629572819973f13486371cb611386eb17851e85c",
                 "reference": "629572819973f13486371cb611386eb17851e85c",
+=======
+            "name": "drupal/core",
+            "version": "8.8.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drupal/core/zipball/77971de6d6ade7366cdd3fadfc16c5d02e531446",
+                "reference": "77971de6d6ade7366cdd3fadfc16c5d02e531446",
+>>>>>>> parent of 78d2cc9eb... Update to Drupal 8.8.4. For more information, see https://www.drupal.org/project/drupal/releases/8.8.4
                 "shasum": ""
             },
             "require": {
@@ -11209,10 +11222,18 @@
                     "bootstrap.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "scripts": {
+                "pre-autoload-dump": [
+                    "Drupal\\Core\\Composer\\Composer::preAutoloadDump"
+                ],
+                "post-autoload-dump": [
+                    "Drupal\\Core\\Composer\\Composer::ensureHtaccess"
+                ]
+            },
             "license": [
                 "MIT"
             ],
+<<<<<<< HEAD
             "authors": [
                 {
                     "name": "Laurent Bassin",
@@ -11247,6 +11268,22 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/81ffd3a9c6d707be22e3012b827de1c9775fc5ac",
                 "reference": "81ffd3a9c6d707be22e3012b827de1c9775fc5ac",
+=======
+            "description": "Drupal is an open source content management platform powering millions of websites and applications.",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core.git",
+                "reference": "77971de6d6ade7366cdd3fadfc16c5d02e531446"
+            }
+        },
+        {
+            "name": "drupal/core-composer-scaffold",
+            "version": "8.8.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/984129ae3152d570c9448e52869f04a22fc75269",
+                "reference": "984129ae3152d570c9448e52869f04a22fc75269",
+>>>>>>> parent of 78d2cc9eb... Update to Drupal 8.8.4. For more information, see https://www.drupal.org/project/drupal/releases/8.8.4
                 "shasum": ""
             },
             "require": {
@@ -11269,7 +11306,6 @@
                     "bootstrap.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -11292,6 +11328,7 @@
                 "portable",
                 "shim"
             ],
+<<<<<<< HEAD
             "time": "2020-03-09T19:04:49+00:00"
         },
         {
@@ -11302,6 +11339,17 @@
                 "url": "https://github.com/symfony/polyfill-php56.git",
                 "reference": "d51ec491c8ddceae7dca8dd6c7e30428f543f37d"
             },
+=======
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-composer-scaffold.git",
+                "reference": "984129ae3152d570c9448e52869f04a22fc75269"
+            }
+        },
+        {
+            "name": "drupal/core-project-message",
+            "version": "8.8.3",
+>>>>>>> parent of 78d2cc9eb... Update to Drupal 8.8.4. For more information, see https://www.drupal.org/project/drupal/releases/8.8.4
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/polyfill-php56/zipball/d51ec491c8ddceae7dca8dd6c7e30428f543f37d",
@@ -11326,7 +11374,6 @@
                     "bootstrap.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -11348,6 +11395,7 @@
                 "portable",
                 "shim"
             ],
+<<<<<<< HEAD
             "time": "2020-03-09T19:04:49+00:00"
         },
         {
@@ -11357,6 +11405,77 @@
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php70.git",
                 "reference": "2a18e37a489803559284416df58c71ccebe50bf0"
+=======
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-project-message.git",
+                "reference": "10be18c6a401de8e243777de6a74cb45a7ecacad"
+            }
+        },
+        {
+            "name": "drupal/core-recommended",
+            "version": "8.8.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/c43bf9881a299de9189440e0772579775b1f93f1",
+                "reference": "c43bf9881a299de9189440e0772579775b1f93f1",
+                "shasum": ""
+            },
+            "require": {
+                "asm89/stack-cors": "1.2.0",
+                "composer/installers": "v1.7.0",
+                "composer/semver": "1.5.0",
+                "doctrine/annotations": "v1.4.0",
+                "doctrine/cache": "v1.6.2",
+                "doctrine/collections": "v1.4.0",
+                "doctrine/common": "v2.7.3",
+                "doctrine/inflector": "v1.2.0",
+                "doctrine/lexer": "1.0.2",
+                "drupal/core": "8.8.3",
+                "easyrdf/easyrdf": "0.9.1",
+                "egulias/email-validator": "2.1.11",
+                "guzzlehttp/guzzle": "6.3.3",
+                "guzzlehttp/promises": "v1.3.1",
+                "guzzlehttp/psr7": "1.6.1",
+                "masterminds/html5": "2.3.0",
+                "paragonie/random_compat": "v9.99.99",
+                "pear/archive_tar": "1.4.9",
+                "pear/console_getopt": "v1.4.2",
+                "pear/pear-core-minimal": "v1.10.9",
+                "pear/pear_exception": "v1.0.0",
+                "psr/container": "1.0.0",
+                "psr/http-message": "1.0.1",
+                "psr/log": "1.1.0",
+                "ralouphie/getallheaders": "3.0.3",
+                "stack/builder": "v1.0.5",
+                "symfony-cmf/routing": "1.4.1",
+                "symfony/class-loader": "v3.4.35",
+                "symfony/console": "v3.4.35",
+                "symfony/debug": "v3.4.35",
+                "symfony/dependency-injection": "v3.4.35",
+                "symfony/event-dispatcher": "v3.4.35",
+                "symfony/http-foundation": "v3.4.35",
+                "symfony/http-kernel": "v3.4.35",
+                "symfony/polyfill-ctype": "v1.12.0",
+                "symfony/polyfill-iconv": "v1.12.0",
+                "symfony/polyfill-mbstring": "v1.12.0",
+                "symfony/polyfill-php56": "v1.12.0",
+                "symfony/polyfill-php70": "v1.12.0",
+                "symfony/polyfill-util": "v1.12.0",
+                "symfony/process": "v3.4.35",
+                "symfony/psr-http-message-bridge": "v1.1.2",
+                "symfony/routing": "v3.4.35",
+                "symfony/serializer": "v3.4.35",
+                "symfony/translation": "v3.4.35",
+                "symfony/validator": "v3.4.35",
+                "symfony/yaml": "v3.4.35",
+                "twig/twig": "v1.42.3",
+                "typo3/phar-stream-wrapper": "v3.1.3",
+                "zendframework/zend-diactoros": "1.8.7",
+                "zendframework/zend-escaper": "2.6.1",
+                "zendframework/zend-feed": "2.12.0",
+                "zendframework/zend-stdlib": "3.2.1"
+>>>>>>> parent of 78d2cc9eb... Update to Drupal 8.8.4. For more information, see https://www.drupal.org/project/drupal/releases/8.8.4
             },
             "dist": {
                 "type": "zip",
@@ -11385,10 +11504,15 @@
                     "Resources/stubs"
                 ]
             },
+<<<<<<< HEAD
             "notification-url": "https://packagist.org/downloads/",
+=======
+            "type": "metapackage",
+>>>>>>> parent of 78d2cc9eb... Update to Drupal 8.8.4. For more information, see https://www.drupal.org/project/drupal/releases/8.8.4
             "license": [
                 "MIT"
             ],
+<<<<<<< HEAD
             "authors": [
                 {
                     "name": "Nicolas Grekas",
@@ -11417,6 +11541,18 @@
                 "url": "https://github.com/symfony/polyfill-php72.git",
                 "reference": "37b0976c78b94856543260ce09b460a7bc852747"
             },
+=======
+            "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-recommended.git",
+                "reference": "c43bf9881a299de9189440e0772579775b1f93f1"
+            }
+        },
+        {
+            "name": "drupal/core-vendor-hardening",
+            "version": "8.8.3",
+>>>>>>> parent of 78d2cc9eb... Update to Drupal 8.8.4. For more information, see https://www.drupal.org/project/drupal/releases/8.8.4
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/37b0976c78b94856543260ce09b460a7bc852747",
@@ -11440,7 +11576,6 @@
                     "bootstrap.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -11462,7 +11597,15 @@
                 "portable",
                 "shim"
             ],
+<<<<<<< HEAD
             "time": "2020-02-27T09:26:54+00:00"
+=======
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-vendor-hardening.git",
+                "reference": "1b41da0867c3c9b870db95e94a5adaf4dbbc909b"
+            }
+>>>>>>> parent of 78d2cc9eb... Update to Drupal 8.8.4. For more information, see https://www.drupal.org/project/drupal/releases/8.8.4
         },
         {
             "name": "symfony/polyfill-util",
@@ -14331,6 +14474,7 @@
                 "phpcs",
                 "standards"
             ],
+<<<<<<< HEAD
             "time": "2020-03-08T19:03:35+00:00"
         },
         {
@@ -17748,11 +17892,21 @@
             "time": "2015-12-17T08:42:14+00:00"
         }
     ],
+=======
+            "abandoned": "laminas/laminas-stdlib",
+            "time": "2018-08-28T21:34:05+00:00"
+        }
+    ],
+    "packages-dev": [],
+>>>>>>> parent of 78d2cc9eb... Update to Drupal 8.8.4. For more information, see https://www.drupal.org/project/drupal/releases/8.8.4
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "platform-overrides": {
+        "php": "7.0.8"
+    }
 }

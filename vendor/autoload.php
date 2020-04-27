@@ -4,4 +4,8 @@
 
 require_once __DIR__ . '/composer/autoload_real.php';
 
+<<<<<<< HEAD
 return ComposerAutoloaderInit4af275041421df4d9030dcb45794b591::getLoader();
+=======
+return ComposerAutoloaderInitef05fc1afe55d667592a67cbca75d3bb::getLoader();
+>>>>>>> parent of 78d2cc9eb... Update to Drupal 8.8.4. For more information, see https://www.drupal.org/project/drupal/releases/8.8.4

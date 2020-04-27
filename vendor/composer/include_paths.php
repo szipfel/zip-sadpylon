@@ -6,9 +6,13 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    $vendorDir . '/pear/archive_tar',
+    $vendorDir . '/pear/pear_exception',
     $vendorDir . '/pear/console_getopt',
     $vendorDir . '/pear/pear-core-minimal/src',
+<<<<<<< HEAD
     $vendorDir . '/pear/pear_exception',
     $vendorDir . '/phing/phing/classes',
+=======
+    $vendorDir . '/pear/archive_tar',
+>>>>>>> parent of 78d2cc9eb... Update to Drupal 8.8.4. For more information, see https://www.drupal.org/project/drupal/releases/8.8.4
 );

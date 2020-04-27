@@ -52,6 +52,7 @@
             "url": "https://drupalwxt.github.io/composer-extdeps/"
         }
     ],
+<<<<<<< HEAD
     "scripts": {
         "post-install-cmd": [ ],
         "post-update-cmd": [
@@ -62,6 +63,24 @@
         "nuke": "rm -r -f html vendor",
         "package": "Drupal\\wxt\\Composer\\Package::execute",
         "verify-patched-constraints": "Drupal\\wxt\\Composer\\PatchedConstraint::execute"
+=======
+    "require": {
+        "composer/installers": "^1.2",
+        "drupal/core-composer-scaffold": "^8.8",
+        "drupal/core-project-message": "^8.8",
+        "drupal/core-recommended": "^8.8",
+        "drupal/core-vendor-hardening": "^8.8"
+    },
+    "require-dev": {
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+>>>>>>> parent of 78d2cc9eb... Update to Drupal 8.8.4. For more information, see https://www.drupal.org/project/drupal/releases/8.8.4
     },
     "extra": {
         "drupal-scaffold": {
